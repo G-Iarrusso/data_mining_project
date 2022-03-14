@@ -1,0 +1,21 @@
+Player, Position, School, College, Height, Weight, 40yd dash, Vertical Jump, Bench press(reps at 225lbs), Broad jump, 3Cone, Shuttle run, Drafted
+
+School College apparently doesnt really matter
+
+Position is going to be limited to [ot,ol,og,c] because they normally have the same size and build. This makes the data more uniform
+and will curb any skewing of the results.
+
+Secondary analysis with the addition of conferences based on school location. 
+
+It is common for some metrics to not be considered as a raw value when real world scouting takes place.
+
+Initially going to be a binary classification. Then we can expand to multi-result algorithms if there's time. From there we'll try and 
+predict pick number
+
+As a general rule we're going to include data with missing values unless there are 3 or more values missing where we will discard it.
+
+Another  thing to note for later analysis is that some stats are not as sought after as they once were
+
+It should be noted that some studies found that quality linemen might be found throuout the draft
+
+Long jump, broad jump, 40-yard dash, 10-yard dash, 20-yard dash, shuttle(Longevity+), verticle jump(Longevity+), 3-cone drill(Longevity+), Weight,Bench press(That remains to be seen I.E. no statistical values for it)
