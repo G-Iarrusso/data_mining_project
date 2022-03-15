@@ -1,4 +1,4 @@
-﻿Player,Pos,School,Ht,Wt,40yd,Vertical,Bench,Broad_Jump,3Cone,Shuttle,Draft_Pick
+﻿Player name,Pos,School,Ht,Wt,40yd,Vertical,Bench,Broad Jump,3Cone,Shuttle,Draft pick
 Brian Allen,C,Michigan State,73,298,5.34,26.5,27,99,7.81,4.71,111
 David Bright,OT,Stanford,77,307,,,,,,,-1
 Orlando Brown,OT,Oklahoma,80,345,5.85,19.5,14,82,7.87,5.38,83
@@ -165,7 +165,7 @@ Cole Banwart,OL,Iowa,73,298,5.12,27.5,22,103,7.5,4.7,-1
 Chase Behrndt,OL,West Virginia,75,324,5.55,24.5,25,101,8.21,4.93,-1
 Larry Borom,OL,Missouri,77,322,5.12,31,,,,,151
 Deonte Brown,OL,Alabama,75,344,,27,,,,,193
-John Brunner,OL,North Texas,74,194,,32.5,11,121,6.77,4.3,-1
+John Brunner,OL,North Texas,74,300,,32.5,11,121,6.77,4.3,-1
 Jake Burton,OL,Baylor,77,303,5.49,26,22,100,8.22,4.97,-1
 Donavaughn Campbell,OL,Louisiana Tech,76,336,5.62,22,,93,8.34,5.15,-1
 Jackson Carman,OT,Clemson,76,317,,,,,,,46
@@ -211,7 +211,7 @@ Jimmy Morrissey,OL,Pittsburgh,75,303,5.31,31,26,105,7.39,4.47,230
 Josh Myers,C,Ohio St.,77,310,,,29,,,,62
 Ryan Neuzil,OL,Appalachian St.,74,301,5.09,29,30,102,7.41,4.53,-1
 Royce Newman,OL,Mississippi,77,310,5.14,28,23,104,7.91,4.75,-1
-Jarrett Patterson,OL,Notre Dame,77,195,4.52,,,,,,-1
+Jarrett Patterson,OL,Notre Dame,77,300,4.52,,,,,,-1
 Dillon Radunz,OT,North Dakota St.,77,301,5.16,32,24,112,7.27,4.57,53
 Teton Saltes,OL,New Mexico,76,300,5.04,30.5,22,105,7.76,4.64,-1
 Foster Sarell,OL,Stanford,78,318,5.54,27,26,97,7.63,4.69,-1
@@ -225,5 +225,5 @@ Tim Tanner-Blair,OL,Bowling Green,75,288,5.59,21,32,93,8.06,4.95,-1
 Syrus Tuitele,OL,Fresno St.,77,311,5.21,26,36,94,8.25,4.89,-1
 Alijah Vera-Tucker,OL,USC,76,308,5.05,32,36,106,7.67,4.7,14
 Gunnar Vogel,OL,Northwestern,78,306,5.47,26,23,105,7.67,4.92,-1
-Carson Williams,OL,Arkansas St.,76,255,4.79,38,18,115,,,-1
+Carson Williams,OL,Arkansas St.,76,254,4.79,38,18,115,,,-1
 Landon Young,OT,Kentucky,78,310,5,30.5,34,108,7.7,4.89,206
