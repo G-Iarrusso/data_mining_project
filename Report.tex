@@ -47,25 +47,29 @@ This formula for determining distance is very common in KNN classifiers and is e
 \subsection*{Feature Selection}
 Feature selection is an integral part of the preprocessing for classification. 
 Features are attributes used by models to predict the outcome, some features are raw data, others normalized, or even the result of transformations.
-The goal of feature selection is to remove entropy(degree of randomness) from our data set.
+The goal of feature selection is to remove entropy(degree of randomness) from our data set.[Mwadulo][Jovic]
 This process is not trivial, there is alot of effort placed in feature selection, many methods have been created to address this issue.
-The most general description for the feature selection process is reducing redundant or useless features.
+The most general description for the feature selection process is reducing redundant or useless features.[Jovic]
 The feature that are given to the model will be the only information it sees, thus it is important for an optimium outcome it is fed the leanest and most powerrful feature set.
-Feature selection only deals with removing of existing features, not creatign new ones.
+Feature selection only deals with removing of existing features, not creating new ones.[Mwadulo]
 \subsection*{Feature Extraction}
-Feature extraction works to create new features from existing ones.
+Feature extraction works to create new features from existing ones.[Mwadulo]
 This process can be done by applying functions to the values of one or more existing features.
 Feature extration has the same goal as feature selection, to reduce entropy and produce an optimal feature set.
 It is not uncommon for both to be applied to a feature set to generate a truely optimal feature set.
 \section*{Literature review}
 \subsection*{Combine Values determining success}
-Meil noted a difference between the drafted and undrafted players in regards to preformance in 40 yard dash, 3 cone drill and bench press.
-He also refreences a study conducted that found that broad jump and vertical jump when paired for 40-yard dash were a good representation of draft order. 
+Meil noted a difference between the drafted and undrafted players in regards to preformance in 40 yard dash, 3 cone drill and bench press.[Meil]
+He also refreences a study conducted that found that broad jump and vertical jump when paired for 40-yard dash were a good representation of draft order.[Robbins]
 Although the intentions of this model was not to predict the exact order, this did provide a strong baseline to test against.
-The key point made by Meil was that in comparisson between personal and statistical decissions, the personal is usually worse.
+The key point made by Meil was that in comparisson between personal and statistical decissions, the personal is usually worse.[Meil]
 As the aim of this model is to remove some of the human biad from the selection process.
-The metric of success is more subjective than draftability, however Meil states that for success important metics for linemen are: height, weight, bench press, broad jump, and three-cone drill.
+The metric of success is more subjective than draftability, however Meil states that for success important metics for linemen are: height, weight, bench press, broad jump, and three-cone drill.[Meil]
 This is an interesting feature set, that will be considered when selecting our own features. 
+Gallagher points to the combine events of both broad jump and veritcal jump as well asthe 40 yard dash as drills displaying athletisim with no in game applications.[Gallagher]
+Athletisim is an important metric for drafting players, it can offset a lack of technical skills, as the player is a "Diamond in the rough".
+Gallagher quantified that an ideal first round linemen would jumop farther than 30 inches, and a sub 5 second 40 yard dash.[Gallagher]
+Both of Gallaghers findings are baselines for our feature set. 
 \subsection*{Distance formulas in KNN}
 One of the most important metrics to consider when creating a KNN model is the distance formula that will be used to decide the similarity of two instances in the data set. 
 There are many aspects to consider as each formula will bring something new to the table in terms of flexibility. 
@@ -116,11 +120,11 @@ Shuttle Run   & 0.13   & 0.41   & 0.55    & -0.42         & -0.14       & -0.51 
 \caption*{Figure 1. Correlation matrix for combine events and measurables (2016-2021)}
 \end{table*}
 This inconjuction to events deemed important by Meil and Gallagher were the baselines for features beign fed to the KNN model. 
-Meil placed high stock in the 40 yard dash time with minor importance placed on the shuttle, 3 cone and maximum bench press. 
+Meil placed high stock in the 40 yard dash time with minor importance placed on the shuttle, 3 cone and maximum bench press.[Meil]
 Testing several models with features mentioned in Meil produced favorable outcomes, a model with a feature set of  \{
-40 Yard dash, Bench Press, 3 Cone\} produced 75\% accuracy. likewise swapping Bench Press with Broaad jump also resulted in 75\%.
+40 Yard dash, Bench Press, 3 Cone\} produced 75\% accuracy.[Meil] likewise swapping Bench Press with Broaad jump also resulted in 75\%.
 This wasa good sign of potential for creating an accurate model. 
-Gallagher also favored the 40 yard dash, unlike Miel, Gallagher placed value in the Verticle Jump. This model produced an accuracy of 72\%
+Gallagher also favored the 40 yard dash, unlike Miel, Gallagher placed value in the Verticle Jump.[Gallagher] This model produced an accuracy of 72\%
 These two studies presented very good insight into what metrics were important. 
 The 40 Yard dash was a recurring theme amongst these studies, which was the first first feature used in our model.
 However, unlike the previous studies we adjusted the 40 times to account for the weight of the athlete, this was done by applying the formula: 
@@ -197,4 +201,26 @@ Although combine metrics are tangebile, team needs and depth are intangebile, th
 Another potential model could be one used to determine wheter a player would make the starting 53-player roster at the beginning of the season.
 This model would require significantly more analytics and metrics to be devloped for very subjective factors, like depth at postion, versitility, and team philosophy.
 
+\section*{Bibliography}
+L.Y. Hu, M.W. Huang, S.W. Ke, and C.H.Tsai (2016,5) “The distance function effect on k-nearest neighbor classification for medical datasets” digitial.
+
+N. Ali, D. Neagu, and P. Trundle (2019,11) “Evaluation of k-nearest neighbour classifier performance for heterogeneous data sets” digital. No. 1559 
+
+H.A.A. Alfeilat, A.B.A Hassanat, O. Lasassmeh, A.S. Tarawneh, M.B. Alhasanat, M.S.E. Salman, and V.B.S. Prasath (2019,12) “Effects of Distance Measure Choice on K-Nearest Neighbor Classifier Performance: A Review” digital. Vol. 7 no. 4 
+
+U. Lall and A. Sharma, “A nearest neighbor bootstrap for resampling
+hydrologic time series,” Water Resour. Res., vol. 32, no. 3, pp. 679–693,
+1996.
+
+S. Zhang, X. Li, M. Zong, X. Zhu, and R. Wang(2018,5) “Efficient kNN Classification With Different Numbers of Nearest Neighbors” digital. Vol. 29 no. 5
+
+A.Jovic, K. Brkic, and N. Bogunovic “A review of feature selection methods with applications” digital.
+
+M. Gallagher (2019) "A Better Predictor of NFL Success: Collegiate Performance or the NFL Draft Combine?". digital. 
+
+A.J. Meil(2018) “PREDICTING SUCCESS USING THE NFL SCOUTING COMBINE” digital. 
+
+D.W. Robbins(2011,10) “Positional Physical Characteristics of Players Drafted Into the National Football League” digital. Vol. 25 no. 10 
+
+M.W. Mwadulo "A Review on Feature Selection Methods For Classification Tasks" digital. vol.5 no.6
   \end{document}
