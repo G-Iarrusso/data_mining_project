@@ -58,6 +58,12 @@ One parameter to tune is the value for K.
 Some have theorized it has a mathematical starting point of \[K = \sqrt{n}\][Lali] where n is the number of instances in the dataset but this isn't always the case and has shown to cause issues in real-world data sets[Zhang].
 Another parameter to tune is the equation of the distance function.
 There are many distance functions that can be applied to a KNN model, each with their own strengths and weaknesses.
+\subsection*{Overfitting and Underfitting}
+Overfitting and underfitting are two concepts in machine learning that are essential to understanding the performance of a model. 
+The first, overfitting, means your model has become too good at predicting training data and it will cause very poor test data accuracy. 
+Underfitting is an even worse issue where it cannot predict either. These problems are also prevalent in KNN models and come from the K value[Z Zhong]. 
+Larger K values will underfit the model due to too much information and a small will overfit due to lack of information[Z Zhong]. 
+A balanced K value is vital in alleviating these effects[Z Zhong].
 \subsection*{Minkoski}
 The Minkowski distance formula, written as \[ Minkowski(X,Y) = (\sum_{i=1}^n|x_i-y_i|^p)^\frac{1}{p}\] is a way to calculate the distance between two vectors X and Y. 
 The formula itself has different names depending on the value of p, where p=1 is called the Manhattan distance and p=2 is called the Euclidean distance. 
@@ -92,14 +98,15 @@ Both of Gallagher's findings are baselines for our feature set.
 \subsection*{Distance formulas in KNN}
 One of the most important metrics to consider when creating a KNN model is the distance formula that will decide the similarity of two instances in the data set.
 There are many aspects to consider, as each formula will bring something new to the table in terms of flexibility. For instance, in a study conducted by Li-Yu et al. about distance formulas and how they interact with a data set, there were significant differences based on the data in the dataset[Li-Yu].
-With Minkowski distances and their derivatives, namely Manhattan and Euclidean, they performed well on categorical datasets with a low number of features.  
+With Minkowski distances and their derivatives, namely Manhattan and Euclidean, they performed well on categorical datasets with a low number of features. 
 In contrast to this, those distances would perform better on numerical datasets with more features.
 Their performance in mixed datasets would drop off considerably when adding more features, causing their performance to take an almost 40\% dip when moving from 6 to 7.
 In their observations on Chi Squared in the Li-Yu et al. study, it was found that it worked best on all datasets but would perform better than others on datasets with mixed values[Li-yu].
 We should also note that choosing a p value for Minkowski will vary by data set. It was observed that there was little difference between the two in terms of performance(Hu,2016).
 In other studies, it was observed that the Euclidean measure was not an effective way to measure distance(Najat et al., 2019). Data type isn't the only thing to keep in mind, however, when choosing a distance formula.
-Another important consideration, especially in a voting algorithm like KNN, is noise in the data. A study by Alfeilat  et Al. would find that formulas like Manhattan, Hassanat, and Lorentzian performed well when there was over 90\% noise in the dataset.
+Another important consideration, especially in a voting algorithm like KNN, is noise in the data. A study by Alfeilat et Al. would find that formulas like Manhattan, Hassanat, and Lorentzian performed well when there was over 90\% noise in the dataset.
 Despite these findings, however, it is important to note that these remain recommendations, since each dataset is unique in its challenges and all are subject to the “No free lunch” theorem (Alfeilat et al.,2019).
+The "No Free Lunch" theorem in this case being the idea put forth by David Wolpert that states the idea that if some algorithm A is better than algorithm B on some cost function, in our case accuracy, then there are equally as many times where B is better than A[Wolpert].
 \section*{Hypothesis}
 The hypothesis is that we can manipulate offensive lineman Combine results in such a way that a KNN classifier can predict whether a player could be drafted with 75\% accuracy or better.
 \section*{Methodology}
@@ -221,7 +228,7 @@ One likely reason for the miss classification is the depth of each draft. These 
 \end{itemize}
 This is important to consider, with such a disparity in both \% of players drafted and attendees, there is higher influence from some years compared to others.
 With 2021 having both the largest amount of offensive linemen attend but also the lowest draft percentage.
-Although combine metrics are tangible, team needs and depth are tangible, this can be a huge factor into a player’s draft status.
+Although combine metrics are tangible, team needs and depth are tangible, this can be a huge factor into a player's draft status.
 Another potential model could be one used to determine whether a player would make the starting 53-player roster at the beginning of the season.
 This model would require significantly more analytics and metrics to be developed for very subjective factors, like depth at position, versatility, and team philosophy.
 \section*{Bibliography}
@@ -232,7 +239,7 @@ N. Ali, D. Neagu, and P. Trundle (2019,11) “Evaluation of k-nearest neighbour 
 H.A.A. Alfeilat, A.B.A Hassanat, O. Lasassmeh, A.S. Tarawneh, M.B. Alhasanat, M.S.E. Salman, and V.B.S. Prasath (2019,12) “Effects of Distance Measure Choice on K-Nearest Neighbor Classifier Performance: A Review” digital. Vol. 7 no. 4 
 
 U. Lall and A. Sharma, “A nearest neighbor bootstrap for resampling
-hydrologic time series,” Water Resour. Res., vol. 32, no. 3, pp. 679–693,
+hydrologic time series,” Water Resour. Res., vol. 32, no. 3, pp. 679-693,
 1996.
 
 S. Zhang, X. Li, M. Zong, X. Zhu, and R. Wang(2018,5) “Efficient kNN Classification With Different Numbers of Nearest Neighbors” digital. Vol. 29 no. 5
@@ -246,4 +253,8 @@ A.J. Meil(2018) “PREDICTING SUCCESS USING THE NFL SCOUTING COMBINE” digital.
 D.W. Robbins(2011,10) “Positional Physical Characteristics of Players Drafted Into the National Football League” digital. Vol. 25 no. 10 
 
 M.W. Mwadulo "A Review on Feature Selection Methods For Classification Tasks" digital. vol.5 no.6
-  \end{document}
+
+Z. Zhang (2016,6) "Introduction to machine learning: k-nearest neighbors" digital. vol. 4 no.11
+
+D. Wolpert and W. Macready (1996, 3) "No Free Lunch Theorems for Search." digital. 
+\end{document}
