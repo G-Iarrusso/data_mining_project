@@ -1,11 +1,17 @@
 \documentclass[confrence]{IEEEtran}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
-\title{KNN and the NFL Combine\texttrademark: Can machine learning predict offensive lineman draftability}
+\title{KNN and the NFL Combine\texttrademark: Can machine learning predict offensive lineman daft status}
 \author{John Barber-Ormerod, Gianluca Iarrusso}
 \date{Winter 2022}
 \begin{document}
 \maketitle
+\section*{Abstract}
+The NFL Combine is a yearly event that allows teams to quantify the abilities of college athletes before the NFL draft. 
+The Combine is comprised of six events that measure strength, speed and agility.
+It is very important for scouts to be accurate when drafting players.
+Knn is a classification method that decides the outcome of an entry by the classification of its nearest neighbours. 
+The aim of this paper is to determine if a KNN model can be developed to effectively predict whether a player will be drafted or not.
 \section*{Introduction}
 The \textit{NFL} is the highest point in professional football. Each year, they hold a draft to add new talent to teams.
 The Draft comprises 7 rounds with each team having 1 selection,
@@ -184,7 +190,7 @@ We applied a p value of 2, essentially changing the formula to Euclidean distanc
 \[Distance = \sqrt{(\sum_{i=1}^n|x_i-y_i|^2)}\]
 Sklearn also allows for adjusting weights, opting for the uniform weight, meaning there was no premium placed on closer nodes.
 Offsetting similarity between late draft picks and undrafted players.
-\section*{Outcome}
+\section*{Results}
 The final feature set is as such:
 \begin{itemize}
     \item Weight adjusted 40 yard dash
@@ -212,7 +218,7 @@ This trend extended throughout refining the model as well as existed in the mode
 The most plausible reason for this outcome is the difference in talent. A first round player will physically perform better than a seventh round pick. However, the difference between a player taken in the 7th round and one not drafted is much smaller.
 It is not uncommon for seventh round picks to be cut from the starting roster prior to the start of the season, a trend common amongst all position groups.
 Although this model boasts high accuracy, it should be treated as another tool for scouts. All sports drafts are equal parts luck and scouting.
-This model may also have a very short shelf life, as the demands of players is changing. In the 21st century alone, the avid viewer will notice that offensives have passed more in the last few years compare to the turn of the century.
+This model may also have a very short shelf life, as the demands of players is changing. Differences between coreelations within our matrix and Meil's could indicate this change.
 These changes can cause a model to be obsolete quicker, as other combine features perform better for classification.
 There would need to be constant validation test to ensure this is the optimal feature set.
 It is also important to make a distinction that this model uses only combine results, as pro days are geared toward showing off the players, the combine is fair competition with times usually more accurate.
@@ -231,6 +237,15 @@ With 2021 having both the largest amount of offensive linemen attend but also th
 Although combine metrics are tangible, team needs and depth are tangible, this can be a huge factor into a player's draft status.
 Another potential model could be one used to determine whether a player would make the starting 53-player roster at the beginning of the season.
 This model would require significantly more analytics and metrics to be developed for very subjective factors, like depth at position, versatility, and team philosophy.
+\section*{Conclussion}
+Through the use of feature selection and extraction we were able to develop a set of features that when used within a KNN model where k = 17, it is 90\% accurate at predicting a player's draft status.
+The results produced by this feature set outperformed the feature sets derived from Meil and Gallaghers studies.[Meil][Gallagher]
+The use of weight adjusted 40 yard dash times benefited our accuracy, likewise is true with the maximum bench press weight. 
+Meils use of a correlation matrix translated well for this paper, creating our own gave us insight into the important features to consider and assisted in understanding potential shifts in demands for players.
+The lack of normalization assisted in widening the gap between drafted and undrafted players, the lack of large differences between the two groups made creating an accurate model challenging.
+An important result observed was that not only was the model 90\% accurate but it also boasts high accuracy with different neighbours.
+Losing only 5\% accuracy when going from 17 to 15 and 17 to 19, provided confidence that we were not overfitting the model.
+
 \section*{Bibliography}
 L.Y. Hu, M.W. Huang, S.W. Ke, and C.H.Tsai (2016,5) “The distance function effect on k-nearest neighbor classification for medical datasets” digitial.
 
