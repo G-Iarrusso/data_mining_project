@@ -1,30 +1,30 @@
 \documentclass[confrence]{IEEEtran}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
-\title{KNN and the NFL Combine\texttrademark: Can machine learning predict offensive lineman daft status}
+\title{KNN and the \textit{NFL Combine}: Can machine learning predict offensive lineman daft status}
 \author{John Barber-Ormerod, Gianluca Iarrusso}
 \date{Winter 2022}
 \begin{document}
 \maketitle
 \section*{Abstract}
-The NFL Combine is a yearly event that allows teams to quantify the abilities of college athletes before the NFL draft.
+The \textit{NFL Combine} is a yearly event that allows teams to quantify the abilities of college athletes before the NFL draft.
 The Combine is comprised of six events that measure strength, speed and agility.
 It is very important for scouts to be accurate when drafting players.
-Knn is a classification method that decides the outcome of an entry by the classification of its nearest neighbours.
-The aim of this paper is to determine if a KNN model can be developed to effectively predict whether a player will be drafted or not.
+knn is a classification method that decides the outcome of an entry by the classification of its nearest neighbours.
+The aim of this paper is to determine if a KNN model can be developed to effectively predict whether an offensive lineman will be drafted.
 \section*{Introduction}
 The \textit{NFL} is the highest point in professional football. Each year, they hold a draft to add new talent to teams.
 The Draft comprises 7 rounds with each team having 1 selection,
 which they may trade away for other players and/or draft picks.
 There are an additional 32 picks awarded to teams based on the players they lose in free agency.
 With about 250 selections each year, there is great stock placed in scouting new players to best address team needs.
-Traditionally, scouting is done through watching game film and attending pro/senior days at university campuses.
-The university holds pro or Senior days to display their students' skills, each institute decides when they hold one.
-The combine is also an event held before the draft that is used to determine a player's ability, held by the\textit{NFL} and are 4 consecutive days.
+Traditionally, scouting is done through watching game film and attending Pro/Senior days at university campuses.
+The university holds Pro or Senior days to display their students' skills, each institute decides when they hold one.
+The combine is also an event held before the draft that is used to determine a player's ability, held by the \textit{NFL} and are 4 consecutive days.
 6 events, as well as position-specific drills, occur for each player invited.
 Some players opt-out of drills to both their benefit and detriment.
 This paper aims to determine if the results of the 6 combine drills, as well as measurables like height and weight, can determine a player's draft value.
-We will place the focus on offensive lineman (center, guard and tackle), as previous studies leave them out because of their comparatively poor outcomes to other position groups[Meil].
+We will place the focus on offensive lineman (center, guard and tackle), as previous studies leave this group out because of their comparatively poor outcomes to other position groups[1].
 \section*{Overview}
 \subsection*{40-yard dash}
 The individual must sprint 40 yards from a sprinter's stance. They also record times for the 10 yard and 20 yard intervals, although less common to find.
@@ -36,7 +36,7 @@ This event is used to determine the speed a player changes direction and agility
 \subsection*{3-cone drill}
 Like the 20 yard shuttle, this event also has 3 cones, arranged with the starting cone, a second cone 5 yards ahead of the start, and a third cone 5 yards to the right of the 2nd cone forming an "L" shape.
 The individual runs 5 yards and touches the ground next to the second cone, runs back to the starting cone and touches the ground.
-He runs back to the second cone and turns 90 degrees toward a third cone.
+He runs back to the second cone and turns 90-degrees toward a third cone.
 He then runs around the third cone and heads back to the first cone, again making a 90-degree turn at the second cone to return to the starting cone.
 Like the 20-yard shuttle, this event is a measure of the speed one changes direction and agility.
 \subsection*{225lb bench press}
@@ -61,69 +61,69 @@ Rather, it will make immediate classifications of new instances as we add them t
 It does this by using a formula to measure the distance to each instance in the dataset and return the closest K instances. It then "votes" on the classification of the unknown by taking whichever class appears most often in these K instances.
 The tuning process for the KNN model relies heavily on how the dataset is formatted and the unique challenges presented in that formatting.
 One parameter to tune is the value for K.
-Some have theorized it has a mathematical starting point of \[K = \sqrt{n}\][Lali] where n is the number of instances in the dataset but this isn't always the case and has shown to cause issues in real-world data sets[Zhang].
+Some have theorized it has a mathematical starting point of \[K = \sqrt{n}\][2] where n is the number of instances in the dataset but this isn't always the case and has shown to cause issues in real-world data sets[3].
 Another parameter to tune is the equation of the distance function.
 There are many distance functions that can be applied to a KNN model, each with their own strengths and weaknesses.
 \subsection*{Overfitting and Underfitting}
 Overfitting and underfitting are two concepts in machine learning that are essential to understanding the performance of a model.
 The first, overfitting, means your model has become too good at predicting training data and it will cause very poor test data accuracy.
-Underfitting is an even worse issue where it cannot predict either. These problems are also prevalent in KNN models and come from the K value[Z Zhong].
-Larger K values will underfit the model due to too much information and a small will overfit due to lack of information[Z Zhong].
-A balanced K value is vital in alleviating these effects[Z Zhong].
-\subsection*{Minkoski}
+Underfitting is an even worse issue where it cannot predict either. These problems are also prevalent in KNN models and come from the K value[4].
+Larger K values will underfit the model due to too much information and a small will overfit due to lack of information[4].
+A balanced K value is vital in alleviating these effects[4].
+\subsection*{Minkoski Distance}
 The Minkowski distance formula, written as \[ Minkowski(X,Y) = (\sum_{i=1}^n|x_i-y_i|^p)^\frac{1}{p}\] is a way to calculate the distance between two vectors X and Y.
-The formula itself has different names depending on the value of p, where p=1 is called the Manhattan distance and p=2 is called the Euclidean distance.
+The formula itself has different names depending on the value of p, where p = 1 is called the Manhattan distance and p = 2 is called the Euclidean distance.
 This formula for determining distance is very common in KNN classifiers and is even the default measurement formula for many KNN libraries.
 \subsection*{Feature Selection}
 Feature selection is an integral part of the preprocessing for classification.
 Features are attributes used by models to predict the outcome, some features are raw data, others normalized.
-The goal of feature selection is to remove entropy(degree of randomness) from our data set.[Mwadulo][Jovic]
+The goal of feature selection is to remove entropy(degree of randomness) from our data set[5][6].
 This process is not trivial, there is alot of effort placed in feature selection, many methods have been created to address this issue.
-The most general description for the feature selection process is reducing redundant or useless features.[Jovic]
-The feature that are given to the model will be the only information it sees, thus it is important for an optimium outcome it is fed the leanest and most powerrful feature set.[Mwadulo]
-Feature selection only deals with removing of existing features, not creating new ones.[Mwadulo]
+The most general description for the feature selection process is reducing redundant or useless features[6].
+The feature that are given to the model will be the only information it sees, thus it is important for an optimium outcome it is fed the leanest and most powerrful feature set[5].
+Feature selection only deals with removing of existing features, not creating new ones[5].
 \subsection*{Feature Extraction}
 Feature extraction is an equally important component to developing a model.
-Feature extraction works to create new features from existing ones.[Mwadulo]
+Feature extraction works to create new features from existing ones[5].
 This process can be done by applying functions to the values of one or more existing features.
-Feature extraction has the same goal as feature selection, to reduce entropy and produce an optimal feature set.[Mwadulo]
+Feature extraction has the same goal as feature selection, to reduce entropy and produce an optimal feature set[5].
 It is not uncommon for both to apply to a feature set to generate a truly optimal feature set.
 \section*{Literature review}
 \subsection*{Combine Values determining success}
-Meil noted a difference between the drafted and undrafted players regarding performance in 40 yard dash, 3 cone drill and bench press.[Meil]
-He also references a study conducted that found that broad jump and vertical jump when paired for 40-yard dash were a good representation of draft order.[Robbins]
+Meil noted a difference between the drafted and undrafted players regarding performance in 40 yard dash, 3 cone drill and bench press[1].
+He also references a study conducted that found that broad jump and vertical jump when paired for 40-yard dash were a good representation of draft order[7].
 Although the intentions of this model was not to predict the exact order, this provided a strong baseline to test against.
-The key point made by Meil was that in a comparison between personal and statistical decisions, the personal is usually worse.[Meil]
+The key point made by Meil was that in a comparison between personal and statistical decisions, the personal is usually worse[1].
 Aligning well with our topic as the aim of this model is to remove some of the human bias from the selection process.
-The metric of success is more subjective than draft status, however Meil states that for success important metics for linemen are: height, weight, bench press, broad jump, and three-cone drill.[Meil]
+The metric of success is more subjective than draft status, however Meil states that for success important metics for linemen are: height, weight, bench press, broad jump, and three-cone drill[1].
 This is an interesting feature set that will be considered when selecting our own features.
-Gallagher points to the combine events of both broad jump and vertical jump, and the 40 yard dash as drills displaying athleticism with no in game applications.[Gallagher]
+Gallagher points to the combine events of both broad jump and vertical jump, and the 40 yard dash as drills displaying athleticism with no in game applications[8].
 Athleticism is an important metric for drafting players, it can offset a lack of technical skills, as the player is a "Diamond in the rough".
-Gallagher quantified that an ideal first round linemen would jump farther than 30 inches, and a sub 5 second 40 yard dash.[Gallagher]
+Gallagher quantified that an ideal first round linemen would jump farther than 30 inches, and a sub 5 second 40 yard dash[8].
 Both of Gallagher's findings are baselines for our feature set.
 \subsection*{Distance formulas in KNN}
 One of the most important metrics to consider when creating a KNN model is the distance formula that will decide the similarity of two instances in the data set.
-There are many aspects to consider, as each formula will bring something new to the table in terms of flexibility. For instance, in a study conducted by Li-Yu et al. about distance formulas and how they interact with a data set, there were significant differences based on the data in the dataset[Li-Yu].
-With Minkowski distances and their derivatives, namely Manhattan and Euclidean, they performed well on categorical datasets with a low number of features.
+There are many aspects to consider, as each formula will bring something new to the table in terms of flexibility. For instance, in a study conducted by Li-Yu et al. about distance formulas and how they interact with a data set, there were significant differences based on the data in the dataset[9].
+With Minkowski distances and its derivatives, namely Manhattan and Euclidean, they performed well on categorical datasets with a low number of features.
 In contrast to this, those distances would perform better on numerical datasets with more features.
 Their performance in mixed datasets would drop off considerably when adding more features, causing their performance to take an almost 40\% dip when moving from 6 to 7.
-In their observations on Chi Squared in the Li-Yu et al. study, it was found that it worked best on all datasets but would perform better than others on datasets with mixed values[Li-yu].
-We should also note that choosing a p value for Minkowski will vary by data set. It was observed that there was little difference between the two in terms of performance(Hu,2016).
-In other studies, it was observed that the Euclidean measure was not an effective way to measure distance(Najat et al., 2019). Data type isn't the only thing to keep in mind, however, when choosing a distance formula.
-Another important consideration, especially in a voting algorithm like KNN, is noise in the data. A study by Alfeilat et Al. would find that formulas like Manhattan, Hassanat, and Lorentzian performed well when there was over 90\% noise in the dataset.
-Despite these findings, however, it is important to note that these remain recommendations, since each dataset is unique in its challenges and all are subject to the "No free lunch" theorem (Alfeilat et al.,2019).
-The "No Free Lunch" theorem in this case being the idea put forth by David Wolpert that states the idea that if some algorithm A is better than algorithm B on some cost function, in our case accuracy, then there are equally as many times where B is better than A[Wolpert].
+In their observations on Chi Squared in the Li-Yu et al. study, it was found that it worked best on all datasets but would perform better than others on datasets with mixed values[9].
+We should also note that choosing a p value for Minkowski will vary by data set. It was observed that there was little difference between the two in terms of performance[9].
+In other studies, it was observed that the Euclidean measure was not an effective way to measure distance[10]. Data type isn't the only thing to keep in mind, however, when choosing a distance formula.
+Another important consideration, especially in a voting algorithm like KNN, is noise in the data. A study by Alfeilat et Al. would find that formulas like Manhattan, Hassanat, and Lorentzian performed well when there was over 90\% noise in the dataset[11].
+Despite these findings, however, it is important to note that these remain recommendations, since each dataset is unique in its challenges and all are subject to the "No free lunch" theorem[11].
+The "No Free Lunch" theorem in this case being the idea put forth by David Wolpert that states the idea that if some algorithm A is better than algorithm B on some cost function, in our case accuracy, then there are equally as many times where B is better than A[12].
 \section*{Hypothesis}
 The hypothesis is that we can manipulate offensive lineman Combine results in such a way that a KNN classifier can predict whether a player could be drafted with 75\% accuracy or better.
 \section*{Methodology}
 \subsection*{Data Gathering and Preprocessing}
 The values of combine information was gathered from \textit{Pro-Football-Refrence(PFR)}.
-The Combine results available from 2000 to 2021[PFR 1], and contained each position group.
+The Combine results available from 2000 to 2021[13], and contained each position group.
 Attaining the data was simple, \textit{PFR} allows for each year to be downloaded as a CSV.
 From there, removing non-offensive lineman is trivial, there were some anomalies in our dataset.
 These were easily handleable. There were two instances of weights being 100lbs lighter, an additional one height was a foot shorter.
 Cleaning the data was overall straightforward, the data was manageable to verify outliers manually and we rectified immediately the above issues.
-Although we had access to 21 years of data, we decided to only use the most recent 6 years(2021-2016)[PFR1-6]. This results from the ever changing landscape of the \textit{NFL} and the demands of offensive lineman.
+Although we had access to 21 years of data, we decided to only use the most recent 6 years(2021-2016)[13-18]. This results from the ever changing landscape of the \textit{NFL} and the demands of offensive lineman.
 Within our data set, there are instances of missing data because of players opting-out of the events.
 The decision was made to keep all participants, when testing models if the individual did not have values for all features the individual's record was dropped.
 This was done to provide as much data as possible to the models. There are 330 entries with only 190 taking part in all events.
@@ -150,20 +150,20 @@ We created a similar matrix using our data set, which is represented in figure 1
     \caption*{Figure 1. Correlation matrix for combine events and measurables (2016-2021)}
 \end{table*}
 This, with events deemed important by Meil and Gallagher, were the baselines for features being fed to the KNN model.
-Meil placed high stock in the 40 yard dash time with minor importance placed on the shuttle, 3 cone and maximum bench press.[Meil]
-Testing several models with features mentioned in Meil produced favorable outcomes, a model with a feature set of  \{
-40 Yard dash, Bench Press, 3 Cone\} produced 75\% accuracy.[Meil] likewise, swapping Bench Press with Broad jump also resulted in 75\%.
+Meil placed high stock in the 40 yard dash time with minor importance placed on the shuttle, 3 cone and maximum bench press[1].
+Testing several models with features mentioned in Meil produced favorable outcomes, a model with a feature set of \{
+40 Yard dash, Bench Press, 3 Cone\} produced 75\% accuracy[1]. likewise, swapping Bench Press with Broad jump also resulted in 75\%.
 This was a good sign of potential for creating an accurate model.
-Gallagher also favored the 40 yard dash. Unlike Miel, Gallagher placed value in the vertical jump.[Gallagher] This model produced an accuracy of 72\%
+Gallagher also favored the 40 yard dash. Unlike Miel, Gallagher placed value in the vertical jump[8]. This model produced an accuracy of 72\%
 These two studies presented very good insight into what metrics were important.
 The 40 Yard dash was a recurring theme amongst these studies, which was the first feature used in our model.
-However, unlike the previous studies, we adjusted the 40 times to account for the weight of the athlete. This was done by applying the formula:
+However, unlike the previous studies, we adjusted the 40 times to account for the weight of the athlete. This was done by applying the formula[19]:
 \[
     AdjustedWeight = \frac{PlayerWeight*200}{40YardTime^4}
 \]
 This produced a more accurate metric for speed, as the lighter, slower players and faster, heavier players would be better differentiated.
 The formula is not perfect but for classification was better than weight and 40 yard time on their own.
-The equation is from \textit{Pro Football Focus(PFF)}, they are one of the leading analytics for football, specifically the \textit{NFL} [PFF].
+The equation is from \textit{Pro Football Focus(PFF)}, they are one of the leading analytics for football, specifically the \textit{NFL} [13].
 Another equation used was that for the one rep max. The purpose of this was to create a tangible metric for upper body strength.
 The most common equation for one rep max is:
 \[
@@ -239,7 +239,7 @@ Another potential model could be one used to determine whether a player would ma
 This model would require significantly more analytics and metrics to be developed for very subjective factors, like depth at position, versatility, and team philosophy.
 \section*{Conclussion}
 Through the use of feature selection and extraction we were able to develop a set of features that when used within a KNN model where k = 17, it is 90\% accurate at predicting a player's draft status.
-The results produced by this feature set outperformed the feature sets derived from Meil and Gallaghers studies.[Meil][Gallagher]
+The results produced by this feature set outperformed the feature sets derived from Meil and Gallaghers studies[1][8].
 The use of weight adjusted 40 yard dash times benefited our accuracy, likewise is true with the maximum bench press weight.
 Meils use of a correlation matrix translated well for this paper, creating our own gave us insight into the important features to consider and assisted in understanding potential shifts in demands for players.
 The lack of normalization assisted in widening the gap between drafted and undrafted players, the lack of large differences between the two groups made creating an accurate model challenging.
@@ -247,41 +247,23 @@ An important result observed was that not only was the model 90\% accurate but i
 Losing only 5\% accuracy when going from 17 to 15 and 17 to 19, provided confidence that we were not overfitting the model.
 
 \section*{Bibliography}
-L.Y. Hu, M.W. Huang, S.W. Ke, and C.H.Tsai (2016, 5) "The distance function effect on k-nearest neighbor classification for medical datasets" digitial. Available: https://springerplus.springeropen.com/articles/10.1186/s40064-016-2941-7
-
-N. Ali, D. Neagu, and P. Trundle (2019, 11) "Evaluation of k-nearest neighbour classifier performance for heterogeneous data sets" digital. No. 1559  Available: https://link.springer.com/article/10.1007/s42452-019-1356-9
-
-H.A.A. Alfeilat, A.B.A Hassanat, O. Lasassmeh, A.S. Tarawneh, M.B. Alhasanat, M.S.E. Salman, and V.B.S. Prasath (2019,12) "Effects of Distance Measure Choice on K-Nearest Neighbor Classifier Performance: A Review" digital. Vol. 7 no. 4 Available: https://www.liebertpub.com/doi/10.1089/big.2018.0175
-
-U. Lall and A. Sharma, "A nearest neighbor bootstrap for resampling hydrologic time series," Water Resour. Res., vol. 32, no. 3, pp. 679-693, 1996. Available: https://civil.colorado.edu/~balajir/Adv-Data-material/CVEN-6833/papers-2read/lall-sharma-knn.pdf
-
-S. Zhang, X. Li, M. Zong, X. Zhu, and R. Wang(2018, 5) "Efficient kNN Classification With Different Numbers of Nearest Neighbors" digital. Vol. 29 no. 5 Available: https://ieeexplore.ieee.org/document/7898482
-
-A.Jovic, K. Brkic, and N. Bogunovic "A review of feature selection methods with applications" digital. Available: https://ieeexplore.ieee.org/document/7160458
-
-M. Gallagher (2019) "A Better Predictor of NFL Success: Collegiate Performance or the NFL Draft Combine?". digital. Available: https://dc.etsu.edu/cgi/viewcontent.cgi?article=5030&context=etd
-
-A.J. Meil(2018) "PREDICTING SUCCESS USING THE NFL SCOUTING COMBINE" digital. Available: https://scholarworks.calstate.edu/downloads/1z40kt64t
-
-D.W. Robbins(2011, 10) "Positional Physical Characteristics of Players Drafted Into the National Football League" digital. Vol. 25 no. 10 Available: https://pubmed.ncbi.nlm.nih.gov/21886010/
-
-M.W. Mwadulo "A Review on Feature Selection Methods For Classification Tasks" digital. vol.5 no.6 Available: http://ijcatr.com/archives/volume5/issue6/ijcatr05061013.pdf
-
-Z. Zhang (2016, 6) "Introduction to machine learning: k-nearest neighbors" digital. vol. 4 no.11 Available: https://pubmed.ncbi.nlm.nih.gov/27386492/
-
-D. Wolpert and W. Macready (1996, 3) "No Free Lunch Theorems for Search." digital. Available: https://www.santafe.edu/research/results/working-papers/no-free-lunch-theorems-for-search
-
-S. Barrett (2017, 6) "Metrics that Matter: Learning from weight-adjusted 40 times" PFF. Available: https://www.pff.com/news/fantasy-football-metrics-that-matter-learning-from-weight-adjusted-40-times
-
-"2016 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2016-combine.htm
-
-"2017 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2017-combine.htm
-
-"2018 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2018-combine.htm
-
-"2019 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2019-combine.htm
-
-"2020 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2020-combine.htm
-
-"2021 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2021-combine.htm
+ [1] A.J. Meil(2018) "PREDICTING SUCCESS USING THE NFL SCOUTING COMBINE" digital. Available: https://scholarworks.calstate.edu/downloads/1z40kt64t
+[2] U. Lall and A. Sharma, "A nearest neighbor bootstrap for resampling hydrologic time series," Water Resour. Res., vol. 32, no. 3, pp. 679-693, 1996. Available: https://civil.colorado.edu/~balajir/Adv-Data-material/CVEN-6833/papers-2read/lall-sharma-knn.pdf
+[3] S. Zhang, X. Li, M. Zong, X. Zhu, and R. Wang(2018, 5) "Efficient kNN Classification With Different Numbers of Nearest Neighbors" digital. Vol. 29 no. 5 Available: https://ieeexplore.ieee.org/document/7898482
+[4] Z. Zhang (2016, 6) "Introduction to machine learning: k-nearest neighbors" digital. vol. 4 no.11 Available: https://pubmed.ncbi.nlm.nih.gov/27386492/
+[5] M.W. Mwadulo "A Review on Feature Selection Methods For Classification Tasks" digital. vol.5 no.6 Available: http://ijcatr.com/archives/volume5/issue6/ijcatr05061013.pdf
+[6] A.Jovic, K. Brkic, and N. Bogunovic "A review of feature selection methods with applications" digital. Available: https://ieeexplore.ieee.org/document/7160458
+[7] D.W. Robbins(2011, 10) "Positional Physical Characteristics of Players Drafted Into the National Football League" digital. Vol. 25 no. 10 Available: https://pubmed.ncbi.nlm.nih.gov/21886010/
+[8] M. Gallagher (2019) "A Better Predictor of NFL Success: Collegiate Performance or the NFL Draft Combine?". digital. Available: https://dc.etsu.edu/cgi/viewcontent.cgi?article=5030&context=etd
+[9] L.Y. Hu, M.W. Huang, S.W. Ke, and C.H.Tsai (2016, 5) "The distance function effect on k-nearest neighbor classification for medical datasets" digitial. Available: https://springerplus.springeropen.com/articles/10.1186/s40064-016-2941-7
+[10] N. Ali, D. Neagu, and P. Trundle (2019, 11) "Evaluation of k-nearest neighbour classifier performance for heterogeneous data sets" digital. No. 1559  Available: https://link.springer.com/article/10.1007/s42452-019-1356-9
+[11] H.A.A. Alfeilat, A.B.A Hassanat, O. Lasassmeh, A.S. Tarawneh, M.B. Alhasanat, M.S.E. Salman, and V.B.S. Prasath (2019,12) "Effects of Distance Measure Choice on K-Nearest Neighbor Classifier Performance: A Review" digital. Vol. 7 no. 4 Available: https://www.liebertpub.com/doi/10.1089/big.2018.0175
+[12] D. Wolpert and W. Macready (1996, 3) "No Free Lunch Theorems for Search." digital. Available: https://www.santafe.edu/research/results/working-papers/no-free-lunch-theorems-for-search
+[13] "2016 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2016-combine.htm
+[14] "2017 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2017-combine.htm
+[15] "2018 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2018-combine.htm
+[16] "2019 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2019-combine.htm
+[17] "2020 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2020-combine.htm
+[18] "2021 NFL Combine Results" Distributed by Pro Football Refrence. Available: https://www.pro-football-reference.com/draft/2021-combine.htm
+[19] S. Barrett (2017, 6) "Metrics that Matter: Learning from weight-adjusted 40 times" PFF. Available: https://www.pff.com/news/fantasy-football-metrics-that-matter-learning-from-weight-adjusted-40-times
 \end{document}
