@@ -1,0 +1,469 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.24)  7 APR 2022 13:28
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/data_mining_project/Report.tex
+(c:/data_mining_project/Report.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (c:/texlive/2021/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen138
+\@IEEEtrantmpdimenB=\dimen139
+\@IEEEtrantmpdimenC=\dimen140
+\@IEEEtrantmpcountA=\count185
+\@IEEEtrantmpcountB=\count186
+\@IEEEtrantmpcountC=\count187
+\@IEEEtrantmptoksA=\toks16
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
+(c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen141
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen142
+\CLASSINFOnormalsizeunitybaselineskip=\dimen143
+\IEEEnormaljot=\dimen144
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+\IEEEquantizedlength=\dimen145
+\IEEEquantizedlengthdiff=\dimen146
+\IEEEquantizedtextheightdiff=\dimen147
+\IEEEilabelindentA=\dimen148
+\IEEEilabelindentB=\dimen149
+\IEEEilabelindent=\dimen150
+\IEEEelabelindent=\dimen151
+\IEEEdlabelindent=\dimen152
+\IEEElabelindent=\dimen153
+\IEEEiednormlabelsep=\dimen154
+\IEEEiedmathlabelsep=\dimen155
+\IEEEiedtopsep=\skip47
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@IEEEsubequation=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\c@figure=\count193
+\c@table=\count194
+\@IEEEeqnnumcols=\count195
+\@IEEEeqncolcnt=\count196
+\@IEEEsubeqnnumrollback=\count197
+\@IEEEquantizeheightA=\dimen156
+\@IEEEquantizeheightB=\dimen157
+\@IEEEquantizeheightC=\dimen158
+\@IEEEquantizeprevdepth=\dimen159
+\@IEEEquantizemultiple=\count198
+\@IEEEquantizeboxA=\box50
+\@IEEEtmpitemindent=\dimen160
+\IEEEPARstartletwidth=\dimen161
+\c@IEEEbiography=\count199
+\@IEEEtranrubishbin=\box51
+) (c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (c:/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count266
+\mult@box=\box52
+\multicol@leftmargin=\dimen162
+\c@unbalance=\count267
+\c@collectmore=\count268
+\doublecol@number=\count269
+\multicoltolerance=\count270
+\multicolpretolerance=\count271
+\full@width=\dimen163
+\page@free=\dimen164
+\premulticols=\dimen165
+\postmulticols=\dimen166
+\multicolsep=\skip50
+\multicolbaselineskip=\skip51
+\partial@page=\box53
+\last@line=\box54
+\maxbalancingoverflow=\dimen167
+\mult@rightbox=\box55
+\mult@grightbox=\box56
+\mult@firstbox=\box57
+\mult@gfirstbox=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@minrows=\count272
+\c@columnbadness=\count273
+\c@finalcolumnbadness=\count274
+\last@try=\dimen168
+\multicolovershoot=\dimen169
+\multicolundershoot=\dimen170
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count275
+) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count276
+\l__pdf_internal_box=\box97
+)
+
+LaTeX Warning: Unused global option(s):
+    [confrence].
+
+(./Report.aux)
+\openout1 = `Report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+-- Lines per column: 58 (exact).
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8.
+(c:/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 64.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 64.
+ [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 139.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 139.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 154.
+ (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
+ [3] [4]
+Underfull \hbox (badness 1968) in paragraph at lines 250--251
+\OT1/ptm/m/n/10 5) "The dis-tance func-tion ef-fect on k-nearest neigh-bor
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 250--251
+\OT1/ptm/m/n/10 clas-si-fi-ca-tion for med-i-cal datasets" digi-tial. Avail-able:
+ []
+
+
+Overfull \hbox (1.59706pt too wide) in paragraph at lines 250--251
+\OT1/ptm/m/n/10 https://springerplus.springeropen.com/articles/10.1186/s40064-
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 252--253
+\OT1/ptm/m/n/10 u-a-tion of k-nearest neigh-bour clas-si-fier per-for-mance for
+ []
+
+
+Underfull \hbox (badness 5231) in paragraph at lines 252--253
+\OT1/ptm/m/n/10 het-ero-ge-neous data sets" dig-i-tal. No. 1559 Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+[]\OT1/ptm/m/n/10 H.A.A. Alfeilat, A.B.A Has-sanat, O. Lasass-meh,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+\OT1/ptm/m/n/10 A.S. Tarawneh, M.B. Al-hasanat, M.S.E. Salman,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+\OT1/ptm/m/n/10 and V.B.S. Prasath (2019,12) "Ef-fects of Dis-tance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+\OT1/ptm/m/n/10 Mea-sure Choice on K-Nearest Neigh-bor Clas-si-fier
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 256--257
+\OT1/ptm/m/n/10 for re-sam-pling hy-dro-logic time se-ries," Wa-ter Re-sour.
+ []
+
+
+Underfull \hbox (badness 5231) in paragraph at lines 256--257
+\OT1/ptm/m/n/10 Res., vol. 32, no. 3, pp. 679-693, 1996. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+\OT1/ptm/m/n/10 https://civil.colorado.edu/ balajir/Adv-Data-material/CVEN-
+ []
+
+c:/data_mining_project/Report.tex:262: Misplaced alignment tab character &.
+l.262 ...tsu.edu/cgi/viewcontent.cgi?article=5030&
+                                                  context=etd
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+[]\OT1/ptm/m/n/10 M. Gal-lagher (2019) "A Bet-ter Pre-dic-tor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+\OT1/ptm/m/n/10 of NFL Suc-cess: Col-le-giate Per-for-mance or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+\OT1/ptm/m/n/10 the NFL Draft Com-bine?". dig-i-tal. Avail-able:
+ []
+
+
+Overfull \hbox (4.12666pt too wide) in paragraph at lines 262--263
+\OT1/ptm/m/n/10 https://dc.etsu.edu/cgi/viewcontent.cgi?article=5030context=etd 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+[]\OT1/ptm/m/n/10 A.J. Meil(2018) "PRE-DICT-ING SUC-CESS US-ING
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 264--265
+\OT1/ptm/m/n/10 THE NFL SCOUT-ING COM-BINE" dig-i-tal. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+[]\OT1/ptm/m/n/10 D.W. Rob-bins(2011, 10) "Po-si-tional Phys-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+\OT1/ptm/m/n/10 Char-ac-ter-is-tics of Play-ers Drafted Into the Na-tional
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 266--267
+\OT1/ptm/m/n/10 Foot-ball League" dig-i-tal. Vol. 25 no. 10 Avail-able:
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 270--271
+[]\OT1/ptm/m/n/10 Z. Zhang (2016, 6) "In-tro-duc-tion to ma-chine learn-
+ []
+
+c:/data_mining_project/Report.tex:272: Missing $ inserted.
+<inserted text> 
+                $
+l.272 ...w.researchgate.net/publication/221997149_
+                                                  No_Free_Lunch_Theorems_for...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/data_mining_project/Report.tex:273: Missing $ inserted.
+<inserted text> 
+                $
+l.273 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+[]\OT1/ptm/m/n/10 D. Wolpert and W. Macready (1996, 3) "No
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 272--273
+\OT1/ptm/m/n/10 Free Lunch The-o-rems for Search." dig-i-tal. Avail-able:
+ []
+
+
+Overfull \hbox (110.11649pt too wide) in paragraph at lines 272--273
+\OT1/ptm/m/n/10 https://www.researchgate.net/publication/221997149$[]\OML/cmm/m/it/10 o[]ree[]unch[]heorems[]or[]earch$ 
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 274--275
+[]\OT1/ptm/m/n/10 S. Bar-rett (2017, 6) "Met-rics that Mat-ter: Learn-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+\OT1/ptm/m/n/10 from weight-adjusted 40 times" PFF. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+\OT1/ptm/m/n/10 https://www.pff.com/news/fantasy-football-metrics-that-
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 276--277
+[]\OT1/ptm/m/n/10 "2016 NFL Com-bine Re-sults" Dis-tributed by Pro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+\OT1/ptm/m/n/10 Foot-ball Re-frence. Avail-able: https://www.pro-football-
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 278--279
+[]\OT1/ptm/m/n/10 "2017 NFL Com-bine Re-sults" Dis-tributed by Pro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+\OT1/ptm/m/n/10 Foot-ball Re-frence. Avail-able: https://www.pro-football-
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 280--281
+[]\OT1/ptm/m/n/10 "2018 NFL Com-bine Re-sults" Dis-tributed by Pro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\OT1/ptm/m/n/10 Foot-ball Re-frence. Avail-able: https://www.pro-football-
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 282--283
+[]\OT1/ptm/m/n/10 "2019 NFL Com-bine Re-sults" Dis-tributed by Pro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+\OT1/ptm/m/n/10 Foot-ball Re-frence. Avail-able: https://www.pro-football-
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 284--285
+[]\OT1/ptm/m/n/10 "2020 NFL Com-bine Re-sults" Dis-tributed by Pro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+\OT1/ptm/m/n/10 Foot-ball Re-frence. Avail-able: https://www.pro-football-
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 286--287
+[]\OT1/ptm/m/n/10 "2021 NFL Com-bine Re-sults" Dis-tributed by Pro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+\OT1/ptm/m/n/10 Foot-ball Re-frence. Avail-able: https://www.pro-football-
+ []
+
+[5] (./Report.aux) ) 
+Here is how much of TeX's memory you used:
+ 1469 strings out of 478276
+ 28528 string characters out of 5850489
+ 344135 words of memory out of 5000000
+ 19724 multiletter control sequences out of 15000+600000
+ 501362 words of font info for 84 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,9n,37p,354b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Report.pdf (5 pages, 146791 bytes).
+PDF statistics:
+ 76 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
