@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.24)  7 APR 2022 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.24)  7 APR 2022 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -344,22 +344,6 @@ Underfull \hbox (badness 2401) in paragraph at lines 270--271
 []\OT1/ptm/m/n/10 Z. Zhang (2016, 6) "In-tro-duc-tion to ma-chine learn-
  []
 
-c:/data_mining_project/Report.tex:272: Missing $ inserted.
-<inserted text> 
-                $
-l.272 ...w.researchgate.net/publication/221997149_
-                                                  No_Free_Lunch_Theorems_for...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/data_mining_project/Report.tex:273: Missing $ inserted.
-<inserted text> 
-                $
-l.273 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 272--273
 []\OT1/ptm/m/n/10 D. Wolpert and W. Macready (1996, 3) "No
@@ -371,8 +355,8 @@ Underfull \hbox (badness 5316) in paragraph at lines 272--273
  []
 
 
-Overfull \hbox (110.11649pt too wide) in paragraph at lines 272--273
-\OT1/ptm/m/n/10 https://www.researchgate.net/publication/221997149$[]\OML/cmm/m/it/10 o[]ree[]unch[]heorems[]or[]earch$ 
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+\OT1/ptm/m/n/10 https://www.santafe.edu/research/results/working-papers/no-
  []
 
 
@@ -460,7 +444,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  34i,9n,37p,354b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report.pdf (5 pages, 146791 bytes).
+Output written on Report.pdf (5 pages, 145128 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
