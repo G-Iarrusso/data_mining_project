@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.24)  7 APR 2022 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.24)  12 APR 2022 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -207,57 +207,57 @@ LaTeX Font Info:    ... okay on input line 7.
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 64.
+(Font)              <7> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 64.
+(Font)              <5> on input line 63.
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 139.
+(Font)              <8> on input line 138.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 139.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 154.
+(Font)              <6> on input line 138.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 153.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
  [3] [4]
-Underfull \hbox (badness 4328) in paragraph at lines 250--251
+Underfull \hbox (badness 4328) in paragraph at lines 249--250
 \OT1/ptm/m/n/10 THE NFL SCOUT-ING COM-BINE" dig-i-tal. Avail-able:
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 252--253
+Underfull \hbox (badness 4846) in paragraph at lines 251--252
 []\OT1/ptm/m/n/10 [2] U. Lall and A. Sharma, "A near-est neigh-bor
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 252--253
+Underfull \hbox (badness 1888) in paragraph at lines 251--252
 \OT1/ptm/m/n/10 boot-strap for re-sam-pling hy-dro-logic time se-ries," Wa-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 \OT1/ptm/m/n/10 https://civil.colorado.edu/ balajir/Adv-Data-material/CVEN-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 []\OT1/ptm/m/n/10 [7] D.W. Rob-bins(2011, 10) "Po-si-tional Phys-i-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 \OT1/ptm/m/n/10 Char-ac-ter-is-tics of Play-ers Drafted Into the Na-tional
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 262--263
+Underfull \hbox (badness 6859) in paragraph at lines 261--262
 \OT1/ptm/m/n/10 Foot-ball League" dig-i-tal. Vol. 25 no. 10 Avail-able:
  []
 
-c:/data_mining_project/Report.tex:264: Misplaced alignment tab character &.
-l.264 ...tsu.edu/cgi/viewcontent.cgi?article=5030&
+c:/data_mining_project/Report.tex:263: Misplaced alignment tab character &.
+l.263 ...tsu.edu/cgi/viewcontent.cgi?article=5030&
                                                   context=etd
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -267,117 +267,117 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 []\OT1/ptm/m/n/10 [8] M. Gal-lagher (2019) "A Bet-ter Pre-dic-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 \OT1/ptm/m/n/10 of NFL Suc-cess: Col-le-giate Per-for-mance or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 \OT1/ptm/m/n/10 the NFL Draft Com-bine?". dig-i-tal. Avail-able:
  []
 
 
-Overfull \hbox (4.12666pt too wide) in paragraph at lines 264--265
+Overfull \hbox (4.12666pt too wide) in paragraph at lines 263--264
 \OT1/ptm/m/n/10 https://dc.etsu.edu/cgi/viewcontent.cgi?article=5030context=etd 
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 266--267
+Underfull \hbox (badness 1968) in paragraph at lines 265--266
 \OT1/ptm/m/n/10 5) "The dis-tance func-tion ef-fect on k-nearest neigh-bor
  []
 
 
-Underfull \hbox (badness 7291) in paragraph at lines 266--267
+Underfull \hbox (badness 7291) in paragraph at lines 265--266
 \OT1/ptm/m/n/10 clas-si-fi-ca-tion for med-i-cal datasets" digi-tial. Avail-able:
  []
 
 
-Overfull \hbox (1.59706pt too wide) in paragraph at lines 266--267
+Overfull \hbox (1.59706pt too wide) in paragraph at lines 265--266
 \OT1/ptm/m/n/10 https://springerplus.springeropen.com/articles/10.1186/s40064-
  []
 
 
-Underfull \hbox (badness 2343) in paragraph at lines 268--269
+Underfull \hbox (badness 2343) in paragraph at lines 267--268
 []\OT1/ptm/m/n/10 [10] N. Ali, D. Neagu, and P. Trun-dle (2019, 11)
  []
 
 
-Underfull \hbox (badness 7344) in paragraph at lines 270--271
+Underfull \hbox (badness 7344) in paragraph at lines 269--270
 []\OT1/ptm/m/n/10 [11] H.A.A. Alfeilat, A.B.A Has-sanat, O. Lasass-
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 270--271
+Underfull \hbox (badness 3118) in paragraph at lines 269--270
 \OT1/ptm/m/n/10 meh, A.S. Tarawneh, M.B. Al-hasanat, M.S.E. Salman,
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 270--271
+Underfull \hbox (badness 4181) in paragraph at lines 269--270
 \OT1/ptm/m/n/10 sure Choice on K-Nearest Neigh-bor Clas-si-fier Per-for-
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 270--271
+Underfull \hbox (badness 5607) in paragraph at lines 269--270
 \OT1/ptm/m/n/10 mance: A Re-view" dig-i-tal. Vol. 7 no. 4 Avail-able:
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 272--273
+Underfull \hbox (badness 3525) in paragraph at lines 271--272
 []\OT1/ptm/m/n/10 [12] D. Wolpert and W. Macready (1996, 3) "No
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 272--273
+Underfull \hbox (badness 5316) in paragraph at lines 271--272
 \OT1/ptm/m/n/10 Free Lunch The-o-rems for Search." dig-i-tal. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 \OT1/ptm/m/n/10 https://www.santafe.edu/research/results/working-papers/no-
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 274--275
+Underfull \hbox (badness 6204) in paragraph at lines 273--274
 []\OT1/ptm/m/n/10 [13] "2016 NFL Com-bine Re-sults" Dis-tributed by
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 276--277
+Underfull \hbox (badness 6204) in paragraph at lines 275--276
 []\OT1/ptm/m/n/10 [14] "2017 NFL Com-bine Re-sults" Dis-tributed by
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 278--279
+Underfull \hbox (badness 6204) in paragraph at lines 277--278
 []\OT1/ptm/m/n/10 [15] "2018 NFL Com-bine Re-sults" Dis-tributed by
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 280--281
+Underfull \hbox (badness 6204) in paragraph at lines 279--280
 []\OT1/ptm/m/n/10 [16] "2019 NFL Com-bine Re-sults" Dis-tributed by
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 282--283
+Underfull \hbox (badness 6204) in paragraph at lines 281--282
 []\OT1/ptm/m/n/10 [17] "2020 NFL Com-bine Re-sults" Dis-tributed by
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 284--285
+Underfull \hbox (badness 6204) in paragraph at lines 283--284
 []\OT1/ptm/m/n/10 [18] "2021 NFL Com-bine Re-sults" Dis-tributed by
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 []\OT1/ptm/m/n/10 [19] S. Bar-rett (2017, 6) "Met-rics that Mat-ter:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 \OT1/ptm/m/n/10 https://www.pff.com/news/fantasy-football-metrics-that-
  []
 
@@ -385,13 +385,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--287
 Here is how much of TeX's memory you used:
  1445 strings out of 478276
  28170 string characters out of 5850489
- 345137 words of memory out of 5000000
+ 344137 words of memory out of 5000000
  19703 multiletter control sequences out of 15000+600000
  502184 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,9n,37p,359b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report.pdf (5 pages, 144914 bytes).
+Output written on Report.pdf (5 pages, 145125 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream

@@ -7,35 +7,34 @@
 \begin{document}
 \maketitle
 \section*{Abstract}
-The \textit{NFL Combine} is a yearly event that allows teams to quantify the abilities of college athletes before the NFL draft.
+The \textit{National Football League (NFL) Combine} is a yearly event that allows teams to quantify the abilities of college athletes before the NFL draft.
 The Combine is comprised of six events that measure strength, speed and agility.
 It is very important for scouts to be accurate when drafting players.
 knn is a classification method that decides the outcome of an entry by the classification of its nearest neighbours.
-The aim of this paper is to determine if a KNN model can be developed to effectively predict whether an offensive lineman will be drafted.
+The purpose of this paper is to determine if a KNN model can be developed to effectively predict whether an offensive lineman will be drafted.
 \section*{Introduction}
-The \textit{NFL} is the highest point in professional football. Each year, they hold a draft to add new talent to teams.
-The Draft comprises 7 rounds with each team having 1 selection,
-which they may trade away for other players and/or draft picks.
-There are an additional 32 picks awarded to teams based on the players they lose in free agency.
+The \textit{NFL} is the highest level of professional American football. Each year, they hold the annual draft to add new talent to teams.
+Comprising of seven rounds in the draft, each team is allowed to have one selection that they may trade away to other teams for other players or draft picks.
+There are an additional 32 picks awarded to teams based on the players they lose during the free agency period.
 With about 250 selections each year, there is great stock placed in scouting new players to best address team needs.
 Traditionally, scouting is done through watching game film and attending Pro/Senior days at university campuses.
 The university holds Pro or Senior days to display their students' skills, each institute decides when they hold one.
-The combine is also an event held before the draft that is used to determine a player's ability, held by the \textit{NFL} and are 4 consecutive days.
-6 events, as well as position-specific drills, occur for each player invited.
+The \textit{NFL Combine} is also an event held before the draft that is used to determine a player's ability, held by the \textit{NFL} andtakes place over the course of four consecutive days. 
+Six events, as well as position-specific drills, occur for each player invited.
 Some players opt-out of drills to both their benefit and detriment.
-This paper aims to determine if the results of the 6 combine drills, as well as measurables like height and weight, can determine a player's draft value.
+This paper aims to determine if the results of the Six combine drills, as well as measurables like height and weight, can determine a player's draft value.
 We will place the focus on offensive lineman (center, guard and tackle), as previous studies leave this group out because of their comparatively poor outcomes to other position groups[1].
 \section*{Overview}
 \subsection*{40-yard dash}
-The individual must sprint 40 yards from a sprinter's stance. They also record times for the 10 yard and 20 yard intervals, although less common to find.
+The individual must sprint 40 yards from a sprinter's stance. They also record times for the 10 yard and 20 yard intervals, although this information is less commonly evaluated, and more difficult to find.
 This event is used to determine straight line speed and an ability to get downfield.
 \subsection*{20-yard shuttle}
-This event comprises 3 cones, a start cone and 2 other cones each 5 yards away from the starting cone to the right and left, respectively.
-The individual runs 5 yards to his right, touches his hand to the ground, he then runs 10 yards left and touches the ground, then running right 5 yards to the return position.
+This event comprises Three cones, a start cone and two other cones each five yards away from the starting cone to the right and left, respectively.
+The individual runs five yards to his right, touches his hand to the ground, he then runs 10 yards left and touches the ground, then running right five yards to the return position.
 This event is used to determine the speed a player changes direction and agility.
-\subsection*{3-cone drill}
-Like the 20 yard shuttle, this event also has 3 cones, arranged with the starting cone, a second cone 5 yards ahead of the start, and a third cone 5 yards to the right of the 2nd cone forming an "L" shape.
-The individual runs 5 yards and touches the ground next to the second cone, runs back to the starting cone and touches the ground.
+\subsection*{Three-cone drill}
+Like the 20 yard shuttle, this event also has three cones, arranged with the starting cone, a second cone five yards ahead of the start, and a third cone five yards to the right of the 2nd cone forming an "L" shape.
+The individual runs five yards and touches the ground next to the second cone, runs back to the starting cone and touches the ground.
 He runs back to the second cone and turns 90-degrees toward a third cone.
 He then runs around the third cone and heads back to the first cone, again making a 90-degree turn at the second cone to return to the starting cone.
 Like the 20-yard shuttle, this event is a measure of the speed one changes direction and agility.
@@ -66,10 +65,10 @@ Another parameter to tune is the equation of the distance function.
 There are many distance functions that can be applied to a KNN model, each with their own strengths and weaknesses.
 \subsection*{Overfitting and Underfitting}
 Overfitting and underfitting are two concepts in machine learning that are essential to understanding the performance of a model.
-The first, overfitting, means your model has become too good at predicting training data and it will cause very poor test data accuracy.
+The first, overfitting, means your model has become too good at predicting training data and won't be as good when you go to predict on the testing dataset.
 Underfitting is an even worse issue where it cannot predict either. These problems are also prevalent in KNN models and come from the K value[4].
 Larger K values will underfit the model due to too much information and a small will overfit due to lack of information[4].
-A balanced K value is vital in alleviating these effects[4].
+A K value inbetween these two extremes is therefore instrumental in making a KNN model that can accurately predict data[4].
 \subsection*{Minkoski Distance}
 The Minkowski distance formula, written as \[ Minkowski(X,Y) = (\sum_{i=1}^n|x_i-y_i|^p)^\frac{1}{p}\] is a way to calculate the distance between two vectors X and Y.
 The formula itself has different names depending on the value of p, where p = 1 is called the Manhattan distance and p = 2 is called the Euclidean distance.
@@ -90,29 +89,29 @@ Feature extraction has the same goal as feature selection, to reduce entropy and
 It is not uncommon for both to apply to a feature set to generate a truly optimal feature set.
 \section*{Literature review}
 \subsection*{Combine Values determining success}
-Meil noted a difference between the drafted and undrafted players regarding performance in 40 yard dash, 3 cone drill and bench press[1].
+Meil noted a difference between the drafted and undrafted players regarding performance in 40 yard dash, three cone drill and bench press[1].
 He also references a study conducted that found that broad jump and vertical jump when paired for 40-yard dash were a good representation of draft order[7].
 Although the intentions of this model was not to predict the exact order, this provided a strong baseline to test against.
 The key point made by Meil was that in a comparison between personal and statistical decisions, the personal is usually worse[1].
 Aligning well with our topic as the aim of this model is to remove some of the human bias from the selection process.
-The metric of success is more subjective than draft status, however Meil states that for success important metics for linemen are: height, weight, bench press, broad jump, and three-cone drill[1].
+The metric of success is more subjective than draft status, however Meil states that for success important metics for linemen are: height, weight, bench press, broad jump, and Three cone drill[1].
 This is an interesting feature set that will be considered when selecting our own features.
 Gallagher points to the combine events of both broad jump and vertical jump, and the 40 yard dash as drills displaying athleticism with no in game applications[8].
 Athleticism is an important metric for drafting players, it can offset a lack of technical skills, as the player is a "Diamond in the rough".
-Gallagher quantified that an ideal first round linemen would jump farther than 30 inches, and a sub 5 second 40 yard dash[8].
+Gallagher quantified that an ideal first round linemen would jump farther than 30 inches, and a sub five second 40 yard dash[8].
 Both of Gallagher's findings are baselines for our feature set.
 \subsection*{Distance formulas in KNN}
-One of the most important metrics to consider when creating a KNN model is the distance formula that will decide the similarity of two instances in the data set.
-There are many aspects to consider, as each formula will bring something new to the table in terms of flexibility. For instance, in a study conducted by Li-Yu et al. about distance formulas and how they interact with a data set, there were significant differences based on the data in the dataset[9].
+One of the most important aspects to consider when creating a KNN model is the distance formula that will decide the similarity of two instances in the data set.
+There are many metrics to consider, as each formula will bring something new to the table. For instance, in a study conducted by Li-Yu et al. about distance formulas and how they interact with a data set, there were significant differences based on the data in the dataset[9].
 With Minkowski distances and its derivatives, namely Manhattan and Euclidean, they performed well on categorical datasets with a low number of features.
 In contrast to this, those distances would perform better on numerical datasets with more features.
 Their performance in mixed datasets would drop off considerably when adding more features, causing their performance to take an almost 40\% dip when moving from 6 to 7.
 In their observations on Chi Squared in the Li-Yu et al. study, it was found that it worked best on all datasets but would perform better than others on datasets with mixed values[9].
-We should also note that choosing a p value for Minkowski will vary by data set. It was observed that there was little difference between the two in terms of performance[9].
-In other studies, it was observed that the Euclidean measure was not an effective way to measure distance[10]. Data type isn't the only thing to keep in mind, however, when choosing a distance formula.
+We should also consider that choosing a p value for Minkowski might vary by data set. It was observed in some instances that there was little difference between P values in terms of performance[9].
+In other studies, it was observed that the Euclidean measure was not as effective as Manhattan[10]. Data type isn't the only thing to keep in mind, however, when choosing a distance formula.
 Another important consideration, especially in a voting algorithm like KNN, is noise in the data. A study by Alfeilat et Al. would find that formulas like Manhattan, Hassanat, and Lorentzian performed well when there was over 90\% noise in the dataset[11].
-Despite these findings, however, it is important to note that these remain recommendations, since each dataset is unique in its challenges and all are subject to the "No free lunch" theorem[11].
-The "No Free Lunch" theorem in this case being the idea put forth by David Wolpert that states the idea that if some algorithm A is better than algorithm B on some cost function, in our case accuracy, then there are equally as many times where B is better than A[12].
+Despite these findings, however, it is important to remember that none of these are hard and fast rules, since each dataset is unique in its challenges and all are subject to the "No free lunch" theorem[11].
+The "No Free Lunch" theorem in this case being the idea put forth by David Wolpert that states the idea that if some algorithm performs the best on some cost function, in our case accuracy of a KNN model, then there are equally as many times where another algorithm would perform better[12].
 \section*{Hypothesis}
 The hypothesis is that we can manipulate offensive lineman Combine results in such a way that a KNN classifier can predict whether a player could be drafted with 75\% accuracy or better.
 \section*{Methodology}
@@ -137,22 +136,22 @@ An important study was by Meil in which he outlined the corelation matrix for co
 We created a similar matrix using our data set, which is represented in figure 1.
 \begin{table*}[htbp]
     \begin{tabular}{lllllllll}
-                      & Height & Weight & 40 Yard & Vertival Jump & Bench Press & Broad Jump & 3 Cone & Shuttle Run \\
+                      & Height & Weight & 40 Yard & Vertival Jump & Bench Press & Broad Jump & Three Cone & Shuttle Run \\
         Height        & 1      &        &         &               &             &            &        &             \\
         Weight        & 0.22   & 1      &         &               &             &            &        &             \\
         40 Yard       & 0.06   & 0.31   & 1       &               &             &            &        &             \\
         Vertical Jump & -0.07  & -0.29  & -0.59   & 1             &             &            &        &             \\
         Bench Press   & -0.16  & 0.07   & -0.32   & 0.21          & 1           &            &        &             \\
         Broad Jump    & 0.08   & -0.28  & -0.60   & 0.67          & -0.07       & 1          &        &             \\
-        3 Cone        & 0.07   & 0.40   & 0.45    & -0.34         & -0.11       & -0.40      & 1      &             \\
+        Three Cone        & 0.07   & 0.40   & 0.45    & -0.34         & -0.11       & -0.40      & 1      &             \\
         Shuttle Run   & 0.13   & 0.41   & 0.55    & -0.42         & -0.14       & -0.51      & 0.70   & 1
     \end{tabular}
     \caption*{Figure 1. Correlation matrix for combine events and measurables (2016-2021)}
 \end{table*}
 This, with events deemed important by Meil and Gallagher, were the baselines for features being fed to the KNN model.
-Meil placed high stock in the 40 yard dash time with minor importance placed on the shuttle, 3 cone and maximum bench press[1].
+Meil placed high stock in the 40 yard dash time with minor importance placed on the shuttle, three cone and maximum bench press[1].
 Testing several models with features mentioned in Meil produced favorable outcomes, a model with a feature set of \{
-40 Yard dash, Bench Press, 3 Cone\} produced 75\% accuracy[1]. likewise, swapping Bench Press with Broad jump also resulted in 75\%.
+40 Yard dash, Bench Press, Three Cone\} produced 75\% accuracy[1]. likewise, swapping Bench Press with Broad jump also resulted in 75\%.
 This was a good sign of potential for creating an accurate model.
 Gallagher also favored the 40 yard dash. Unlike Miel, Gallagher placed value in the vertical jump[8]. This model produced an accuracy of 72\%
 These two studies presented very good insight into what metrics were important.
@@ -173,10 +172,10 @@ With all players only able to lift 225lbs this equation reduces to:
 \[
     OneRepMax = 225*(1+\frac{NumberOfReps}{30})
 \]
-The remaining features were unmodified values from the events, the 3 cone and 20 yard shuttle run.
+The remaining features were unmodified values from the events, the Three cone and 20 yard shuttle run.
 Both features had strong corelation to the 40 yard dash. There was a minor negative correlation to the bench press.
 However, this set was what we felt best represented what we needed for an offensive lineman.
-40 yard dash showed downfield speed. The bench press was an indicator of their upper body strength to push defenders. Finally, the shuttle and 3 cone measure one's ability to change direction, important in swing blocks and reach blocks.
+40 yard dash showed downfield speed. The bench press was an indicator of their upper body strength to push defenders. Finally, the shuttle and Three cone measure one's ability to change direction, important in swing blocks and reach blocks.
 We removed both broad and vertical jumps from the feature set, as well as the aggregated counterparts replaced 40 yard dash and bench.
 \subsection*{Model Creation}
 Once these features were applied to our classifier, we had 192 entries
@@ -195,7 +194,7 @@ The final feature set is as such:
 \begin{itemize}
     \item Weight adjusted 40 yard dash
     \item One rep maximum bench press
-    \item 3 cone drill
+    \item Three cone drill
     \item 20 yard shuttle run
 \end{itemize}
 These features and a K value of 17 Produce a model with outcomes displayed in figure 2.
