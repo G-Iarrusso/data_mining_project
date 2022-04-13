@@ -10,7 +10,7 @@
 The \textit{National Football League (NFL) Combine} is a yearly event that allows teams to quantify the abilities of college athletes before the NFL draft.
 The Combine is comprised of six events that measure strength, speed and agility.
 It is very important for scouts to be accurate when drafting players.
-knn is a classification method that decides the outcome of an entry by the classification of its nearest neighbours.
+KNN is a classification method that decides the outcome of an entry by the classification of its nearest neighbours.
 The purpose of this paper is to determine if a KNN model can be developed to effectively predict whether an offensive lineman will be drafted.
 \section*{Introduction}
 The \textit{NFL} is the highest level of professional American football. Each year, they hold the annual draft to add new talent to teams.
@@ -18,8 +18,8 @@ Comprising of seven rounds in the draft, each team is allowed to have one select
 There are an additional 32 picks awarded to teams based on the players they lose during the free agency period.
 With about 250 selections each year, there is great stock placed in scouting new players to best address team needs.
 Traditionally, scouting is done through watching game film and attending Pro/Senior days at university campuses.
-The university holds Pro or Senior days to display their students' skills, each institute decides when they hold one.
-The \textit{NFL Combine} is also an event held before the draft that is used to determine a player's ability, held by the \textit{NFL} andtakes place over the course of four consecutive days. 
+The university holds Pro/Senior days to display their students' skills; each institute decides when they hold one.
+The \textit{NFL Combine} is also an event held before the draft that is used to determine a player's ability, held by the \textit{NFL} and takes place over the course of four consecutive days. 
 Six events, as well as position-specific drills, occur for each player invited.
 Some players opt-out of drills to both their benefit and detriment.
 This paper aims to determine if the results of the Six combine drills, as well as measurables like height and weight, can determine a player's draft value.
@@ -29,11 +29,11 @@ We will place the focus on offensive lineman (center, guard and tackle), as prev
 The individual must sprint 40 yards from a sprinter's stance. They also record times for the 10 yard and 20 yard intervals, although this information is less commonly evaluated, and more difficult to find.
 This event is used to determine straight line speed and an ability to get downfield.
 \subsection*{20-yard shuttle}
-This event comprises Three cones, a start cone and two other cones each five yards away from the starting cone to the right and left, respectively.
+This event comprises three cones; a start cone and two other cones each five yards away from the starting cone to the right and left, respectively.
 The individual runs five yards to his right, touches his hand to the ground, he then runs 10 yards left and touches the ground, then running right five yards to the return position.
 This event is used to determine the speed a player changes direction and agility.
 \subsection*{Three-cone drill}
-Like the 20 yard shuttle, this event also has three cones, arranged with the starting cone, a second cone five yards ahead of the start, and a third cone five yards to the right of the 2nd cone forming an "L" shape.
+Like the 20 yard shuttle, this event also has three cones arranged with the starting cone, a second cone five yards ahead of the start, and a third cone five yards to the right of the 2nd cone forming an "L" shape.
 The individual runs five yards and touches the ground next to the second cone, runs back to the starting cone and touches the ground.
 He runs back to the second cone and turns 90-degrees toward a third cone.
 He then runs around the third cone and heads back to the first cone, again making a 90-degree turn at the second cone to return to the starting cone.
@@ -65,22 +65,22 @@ Another parameter to tune is the equation of the distance function.
 There are many distance functions that can be applied to a KNN model, each with their own strengths and weaknesses.
 \subsection*{Overfitting and Underfitting}
 Overfitting and underfitting are two concepts in machine learning that are essential to understanding the performance of a model.
-The first, overfitting, means your model has become too good at predicting training data and won't be as good when you go to predict on the testing dataset.
-Underfitting is an even worse issue where it cannot predict either. These problems are also prevalent in KNN models and come from the K value[4].
-Larger K values will underfit the model due to too much information and a small will overfit due to lack of information[4].
+The first, overfitting, meaning your model has become too good at predicting training data and won't be as good when you go to predict on the testing dataset.
+Underfitting is a worse issue where it cannot predict either. These problems are also prevalent in KNN models and come from the K value[4].
+Larger K values will underfit the model due to too much information and smaller K values will overfit due to lack of information[4].
 A K value inbetween these two extremes is therefore instrumental in making a KNN model that can accurately predict data[4].
 \subsection*{Minkoski Distance}
 The Minkowski distance formula, written as \[ Minkowski(X,Y) = (\sum_{i=1}^n|x_i-y_i|^p)^\frac{1}{p}\] is a way to calculate the distance between two vectors X and Y.
 The formula itself has different names depending on the value of p, where p = 1 is called the Manhattan distance and p = 2 is called the Euclidean distance.
 This formula for determining distance is very common in KNN classifiers and is even the default measurement formula for many KNN libraries.
 \subsection*{Feature Selection}
-Feature selection is an integral part of the preprocessing for classification.
-Features are attributes used by models to predict the outcome, some features are raw data, others normalized.
+Feature selection is an integral part of preprocessing for classification.
+Features are attributes used by models to predict the outcome, some features are raw data, others are normalized.
 The goal of feature selection is to remove entropy(degree of randomness) from our data set[5][6].
-This process is not trivial, there is alot of effort placed in feature selection, many methods have been created to address this issue.
+This process is not trivial, there is alot of effort placed in feature selection and many methods have been created to address this issue.
 The most general description for the feature selection process is reducing redundant or useless features[6].
-The feature that are given to the model will be the only information it sees, thus it is important for an optimium outcome it is fed the leanest and most powerrful feature set[5].
-Feature selection only deals with removing of existing features, not creating new ones[5].
+The features that are given to the model will be the only information it sees, thus it is important for an optimium outcome it is fed the leanest and most powerrful feature set[5].
+Feature selection only deals with the removal of existing features, not creating new ones[5].
 \subsection*{Feature Extraction}
 Feature extraction is an equally important component to developing a model.
 Feature extraction works to create new features from existing ones[5].
@@ -88,15 +88,15 @@ This process can be done by applying functions to the values of one or more exis
 Feature extraction has the same goal as feature selection, to reduce entropy and produce an optimal feature set[5].
 It is not uncommon for both to apply to a feature set to generate a truly optimal feature set.
 \section*{Literature review}
-\subsection*{Combine Values determining success}
+\subsection*{Combine Values Determining Success}
 Meil noted a difference between the drafted and undrafted players regarding performance in 40 yard dash, three cone drill and bench press[1].
 He also references a study conducted that found that broad jump and vertical jump when paired for 40-yard dash were a good representation of draft order[7].
 Although the intentions of this model was not to predict the exact order, this provided a strong baseline to test against.
 The key point made by Meil was that in a comparison between personal and statistical decisions, the personal is usually worse[1].
 Aligning well with our topic as the aim of this model is to remove some of the human bias from the selection process.
-The metric of success is more subjective than draft status, however Meil states that for success important metics for linemen are: height, weight, bench press, broad jump, and Three cone drill[1].
+The metric of success is more subjective than draft status, however Meil states that for success important metrics for linemen are: height, weight, bench press, broad jump, and three cone drill[1].
 This is an interesting feature set that will be considered when selecting our own features.
-Gallagher points to the combine events of both broad jump and vertical jump, and the 40 yard dash as drills displaying athleticism with no in game applications[8].
+Gallagher points to the combine events of broad jump and vertical jump, and the 40 yard dash as drills displaying athleticism with no in game applications[8].
 Athleticism is an important metric for drafting players, it can offset a lack of technical skills, as the player is a "Diamond in the rough".
 Gallagher quantified that an ideal first round linemen would jump farther than 30 inches, and a sub five second 40 yard dash[8].
 Both of Gallagher's findings are baselines for our feature set.
@@ -107,7 +107,7 @@ With Minkowski distances and its derivatives, namely Manhattan and Euclidean, th
 In contrast to this, those distances would perform better on numerical datasets with more features.
 Their performance in mixed datasets would drop off considerably when adding more features, causing their performance to take an almost 40\% dip when moving from 6 to 7.
 In their observations on Chi Squared in the Li-Yu et al. study, it was found that it worked best on all datasets but would perform better than others on datasets with mixed values[9].
-We should also consider that choosing a p value for Minkowski might vary by data set. It was observed in some instances that there was little difference between P values in terms of performance[9].
+We should also consider that choosing a p-value for Minkowski might vary by data set. It was observed in some instances that there was little difference between P values in terms of performance[9].
 In other studies, it was observed that the Euclidean measure was not as effective as Manhattan[10]. Data type isn't the only thing to keep in mind, however, when choosing a distance formula.
 Another important consideration, especially in a voting algorithm like KNN, is noise in the data. A study by Alfeilat et Al. would find that formulas like Manhattan, Hassanat, and Lorentzian performed well when there was over 90\% noise in the dataset[11].
 Despite these findings, however, it is important to remember that none of these are hard and fast rules, since each dataset is unique in its challenges and all are subject to the "No free lunch" theorem[11].
@@ -116,18 +116,18 @@ The "No Free Lunch" theorem in this case being the idea put forth by David Wolpe
 The hypothesis is that we can manipulate offensive lineman Combine results in such a way that a KNN classifier can predict whether a player could be drafted with 75\% accuracy or better.
 \section*{Methodology}
 \subsection*{Data Gathering and Preprocessing}
-The values of combine information was gathered from \textit{Pro-Football-Refrence(PFR)}.
+The values of combine information was gathered from \textit{Pro-Football-Refrence (PFR)}.
 The Combine results available from 2000 to 2021[13], and contained each position group.
 Attaining the data was simple, \textit{PFR} allows for each year to be downloaded as a CSV.
-From there, removing non-offensive lineman is trivial, there were some anomalies in our dataset.
-These were easily handleable. There were two instances of weights being 100lbs lighter, an additional one height was a foot shorter.
+From there, removing non-offensive lineman is trivial, there were some anomalies in our dataset, 
+which were easily handleable. There were two instances of weights being 100lbs lighter, an additional one height was a foot shorter.
 Cleaning the data was overall straightforward, the data was manageable to verify outliers manually and we rectified immediately the above issues.
 Although we had access to 21 years of data, we decided to only use the most recent 6 years(2021-2016)[13-18]. This results from the ever changing landscape of the \textit{NFL} and the demands of offensive lineman.
 Within our data set, there are instances of missing data because of players opting-out of the events.
 The decision was made to keep all participants, when testing models if the individual did not have values for all features the individual's record was dropped.
 This was done to provide as much data as possible to the models. There are 330 entries with only 190 taking part in all events.
 With the differences between players drafted later and undrafted players being so minute, it was important to distinguish as best as possible.
-This was accomplished by not normalizing the data, normalizing the data would unfavorably affect our model.
+This was accomplished by not normalizing the data; normalizing the data would unfavorably affect our model.
 The lack of normalization does disproportionately value bench press, this value is an integer, often greater than 20, Decimal values like the 40 yard dash would not see a difference greater than 2.00.
 \subsection*{Feature Selection and Extraction}
 When examining the features we currently had, there was very little difference between the 40 yard time of a drafted and undrafted player.
@@ -162,7 +162,7 @@ However, unlike the previous studies, we adjusted the 40 times to account for th
 \]
 This produced a more accurate metric for speed, as the lighter, slower players and faster, heavier players would be better differentiated.
 The formula is not perfect but for classification was better than weight and 40 yard time on their own.
-The equation is from \textit{Pro Football Focus(PFF)}, they are one of the leading analytics for football, specifically the \textit{NFL} [13].
+The equation is from \textit{Pro Football Focus (PFF)}, they are one of the leading analytics for football, specifically the \textit{NFL} [13].
 Another equation used was that for the one rep max. The purpose of this was to create a tangible metric for upper body strength.
 The most common equation for one rep max is:
 \[
@@ -179,13 +179,13 @@ However, this set was what we felt best represented what we needed for an offens
 We removed both broad and vertical jumps from the feature set, as well as the aggregated counterparts replaced 40 yard dash and bench.
 \subsection*{Model Creation}
 Once these features were applied to our classifier, we had 192 entries
-We then needed to determine the number of neighbors applying the optimal neighbor formula: \[OptimalNeighbor = \sqrt{NumOfEntries}\]
-Resulting in an optimal neighbor number of 13.
+We then needed to determine the number of neighbours applying the optimal neighbour formula: \[OptimalNeighbor = \sqrt{NumOfEntries}\]
+Resulting in an optimal neighbour number of 13.
 However, with some additional testing, it was determined that a K value of 17 would work better for this data set, while still not over-fitting.
 Other K values such as 15 and 19 both produce accuracies greater than 80\% suggesting the model is properly responded to changes.
 It is important to ensure we are not creating a model that overfit.
 Using sklearn, we implemented a KNN classifier. When changing parameters, we opted to use the Mickoski Distance formula.
-We applied a p value of 2, essentially changing the formula to Euclidean distance, reducing the aforementioned formula to:
+We applied a p-value of 2, essentially changing the formula to Euclidean distance, reducing the aforementioned formula to:
 \[Distance = \sqrt{(\sum_{i=1}^n|x_i-y_i|^2)}\]
 Sklearn also allows for adjusting weights, opting for the uniform weight, meaning there was no premium placed on closer nodes.
 Offsetting similarity between late draft picks and undrafted players.
